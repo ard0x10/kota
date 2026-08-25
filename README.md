@@ -3,12 +3,9 @@
 **Every Claude account you have, in the corner of the screen.**
 
 <p align="center">
-  <img src="docs/window-dark.png" height="460" alt="kota showing three accounts">
-</p>
-
-<p align="center">
-  <img src="docs/window-light.png" height="290" alt="the same window in the light palette">
-  <img src="docs/settings-dark.png" height="290" alt="the settings">
+  <img src="docs/window-dark.png" height="280" alt="kota showing three accounts">
+  <img src="docs/window-light.png" height="280" alt="the same window in the light palette">
+  <img src="docs/settings-dark.png" height="280" alt="the settings">
 </p>
 
 *[Türkçe README](README.tr.md)*
