@@ -30,12 +30,21 @@ jobs:
           python -m pip install --upgrade pip
           python -m pip install PyQt6 ruff
 
+      # PyQt6 links against libEGL even on the offscreen platform, and the
+      # Ubuntu runners do not ship it. Without this Qt fails to load, the GUI
+      # tests quietly skip themselves, and the screenshot step fails outright.
+      - name: Qt's system libraries
+        if: runner.os == 'Linux'
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libegl1 libgl1
+
       - name: Lint
         run: ruff check .
 
       - name: Tests
-        # Qt needs a screen it does not have here, and an X libraries stub on
-        # the Linux runners; offscreen wants neither.
+        # No screen on a runner, so Qt draws to the offscreen platform. It
+        # still needs the libraries installed above to load at all.
         env:
           QT_QPA_PLATFORM: offscreen
         run: python -m unittest discover -s tests -t . -v

@@ -1,10 +1,9 @@
 """That the window can be built, filled and repainted without a screen.
 
 Qt's offscreen platform, so this runs the same on a build machine as it does on
-a desktop. It does not check that anything looks right, because no test
-can; the
-pictures in docs/ are made by tools/screenshot.py and looked at. But it does
-catch the window that comes up with three blank buttons, or the card that
+a desktop. It does not check that anything looks right, because no test can;
+the pictures in docs/ are made by tools/screenshot.py and looked at. But it
+does catch the window that comes up with three blank buttons, or the card that
 throws on an account whose reading failed.
 """
 
@@ -21,7 +20,7 @@ except ImportError:                     # pragma: no cover
 from kota import api, config, i18n, store, theme
 
 
-@unittest.skipIf(QApplication is None, "PyQt6 is not installed")
+@unittest.skipIf(QApplication is None, "PyQt6 will not load here")
 class Window(unittest.TestCase):
     app = None
 
