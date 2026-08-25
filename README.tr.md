@@ -2,11 +2,18 @@
 
 **Bütün Claude hesapların, ekranın köşesinde.**
 
-<p align="center">
-  <img src="docs/window-tr.png" height="280" alt="kota üç hesabı gösteriyor">
-  <img src="docs/window-light.png" height="280" alt="aynı pencere açık palette">
-  <img src="docs/settings-dark.png" height="280" alt="ayarlar">
-</p>
+<table align="center">
+  <tr>
+    <td align="center"><img src="docs/window-tr.png" height="255" alt="kota üç hesabı gösteriyor"></td>
+    <td align="center"><img src="docs/window-light.png" height="255" alt="aynı pencere açık palette"></td>
+    <td align="center"><img src="docs/settings-dark.png" height="255" alt="ayarlar"></td>
+  </tr>
+  <tr>
+    <td align="center"><sub>Koyu tema</sub></td>
+    <td align="center"><sub>Açık tema</sub></td>
+    <td align="center"><sub>Ayarlar</sub></td>
+  </tr>
+</table>
 
 *[English README](README.md)*
 

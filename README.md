@@ -2,11 +2,18 @@
 
 **Every Claude account you have, in the corner of the screen.**
 
-<p align="center">
-  <img src="docs/window-dark.png" height="280" alt="kota showing three accounts">
-  <img src="docs/window-light.png" height="280" alt="the same window in the light palette">
-  <img src="docs/settings-dark.png" height="280" alt="the settings">
-</p>
+<table align="center">
+  <tr>
+    <td align="center"><img src="docs/window-dark.png" height="255" alt="kota showing three accounts"></td>
+    <td align="center"><img src="docs/window-light.png" height="255" alt="the same window in the light palette"></td>
+    <td align="center"><img src="docs/settings-dark.png" height="255" alt="the settings"></td>
+  </tr>
+  <tr>
+    <td align="center"><sub>Dark mode</sub></td>
+    <td align="center"><sub>Light mode</sub></td>
+    <td align="center"><sub>Settings</sub></td>
+  </tr>
+</table>
 
 *[Türkçe README](README.tr.md)*
 
