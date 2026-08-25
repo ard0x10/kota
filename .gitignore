@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+build/
+dist/
+.ruff_cache/
+
+# What kota writes at runtime lives in %LOCALAPPDATA%\kota, never in the
+# checkout -- but a stray copy of either must not be committed by accident.
+accounts.json
+settings.json

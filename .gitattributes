@@ -1,0 +1,9 @@
+# The installer is run by Windows PowerShell and checks out with CRLF; the
+# Python and the docs are LF wherever they land.
+* text=auto
+*.py    text eol=lf
+*.md    text eol=lf
+*.yml   text eol=lf
+*.toml  text eol=lf
+*.ps1   text eol=crlf
+*.png   binary

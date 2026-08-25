@@ -1,0 +1,49 @@
+[project]
+name = "kota"
+version = "1.0.0"
+description = "How much Claude quota every account you have has left, in the tray."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { file = "LICENSE" }
+authors = [{ name = "ard0x10" }]
+dependencies = ["PyQt6>=6.5"]
+
+[project.urls]
+Homepage = "https://github.com/ard0x10/kota"
+
+[project.scripts]
+kota = "kota.cli:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["kota"]
+
+[tool.ruff]
+line-length = 90
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "UP", "B", "SIM", "RUF", "FURB", "N"]
+ignore = [
+    # Every string a person reads goes through i18n.t(), which looks the
+    # English up and hands back the translation, and an f-string has already
+    # been formatted by the time anyone could translate it. So the format
+    # strings here are %-style on purpose, all of them, rather than some of
+    # them being one thing and some the other.
+    "UP031",
+    "UP032",
+]
+
+[tool.ruff.lint.per-file-ignores]
+# The Turkish catalogue is made of Turkish letters. RUF001 objects to the
+# dotless i on the grounds that it resembles an i, which is the whole point
+# of it being a different letter.
+"kota/i18n.py" = ["RUF001"]
+# Qt names its methods in camelCase; an override has to match.
+"kota/widgets.py" = ["N802"]
+"kota/window.py" = ["N802"]
+"kota/app.py" = ["N802"]
+"tests/*" = ["N802"]
