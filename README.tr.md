@@ -3,13 +3,12 @@
 **Bütün Claude hesapların, ekranın köşesinde.**
 
 <p align="center">
-  <img src="docs/window-tr.png" width="440" alt="kota üç hesabı gösteriyor">
+  <img src="docs/window-tr.png" height="460" alt="kota üç hesabı gösteriyor">
 </p>
 
 <p align="center">
-  <img src="docs/window-light.png" width="265" alt="aynı pencere açık palette">
-  &nbsp;
-  <img src="docs/settings-dark.png" width="265" alt="ayarlar">
+  <img src="docs/window-light.png" height="290" alt="aynı pencere açık palette">
+  <img src="docs/settings-dark.png" height="290" alt="ayarlar">
 </p>
 
 *[English README](README.md)*
