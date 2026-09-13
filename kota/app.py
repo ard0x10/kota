@@ -244,7 +244,7 @@ class Kota:
 
     def _menu_line(self, report):
         if report.usage is None:
-            return "%s  —  %s" % (report.account.name, report.error or "?")
+            return "%s  ·  %s" % (report.account.name, report.error or "?")
         return "%s  %.0f%% / %.0f%%  %s" % (
             report.account.name,
             report.usage.session.percent,
